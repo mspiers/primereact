@@ -82,6 +82,8 @@ export const Splitter = React.memo(
         };
 
         const validateResize = (newPrevPanelSize, newNextPanelSize) => {
+           alert(newPrevPanelSize + ":" + newNextPanelSize);
+
             if (newPrevPanelSize > 100 || newPrevPanelSize < 0) {
                 return false;
             }
